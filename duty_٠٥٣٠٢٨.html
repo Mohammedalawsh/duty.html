@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            ////////////////////////////////first/////////////////////////////////////////////////////////////////////
+                // const readline = require('readline');
+                // const rl = readline.createInterface({
+                // input: process.stdin,
+                // output: process.stdout
+                // });
+
+                // console.log("Console Calculator");
+                // console.log("------------------");
+                // console.log();
+
+                // rl.question("Enter the first number: ", function(firstNumber) {
+                // rl.question("Enter the second number: ", function(secondNumber) {
+                //     rl.question("Enter the operator (+, -, *, /): ", function(operatorSymbol) {
+                //     firstNumber = parseFloat(firstNumber);
+                //     secondNumber = parseFloat(secondNumber);
+
+                //     let result = 0;
+
+                //     switch (operatorSymbol) {
+                //         case '+':
+                //         result = firstNumber + secondNumber;
+                //         break;
+                //         case '-':
+                //         result = firstNumber - secondNumber;
+                //         break;
+                //         case '*':
+                //         result = firstNumber * secondNumber;
+                //         break;
+                //         case '/':
+                //         if (secondNumber !== 0) {
+                //             result = firstNumber / secondNumber;
+                //         } else {
+                //             console.log("Error: Division by zero is not allowed.");
+                //             rl.close();
+                //             return;
+                //         }
+                //         break;
+                //         default:
+                //         console.log("Error: Invalid operator.");
+                //         rl.close();
+                //         return;
+                //     }
+
+                //     console.log("Result: " + result);
+                //     rl.close();
+                //     });
+                // });
+                // });
+                //////////////////////////////////////////second//////////////////////////////////////////////////////////////////////
+                    // const readline = require('readline');
+                    // const rl = readline.createInterface({
+                    // input: process.stdin,
+                    // output: process.stdout
+                    // });
+
+                    // let tasks = [];
+
+                    // function displayMenu() {
+                    // console.log("To-Do List");
+                    // console.log("------------------");
+                    // console.log("1. Add a task");
+                    // console.log("2. View tasks");
+                    // console.log("3. Remove a task");
+                    // console.log("4. Exit");
+                    // console.log();
+                    // }
+
+                    // function addTask() {
+                    // rl.question("Enter the task description: ", function(task) {
+                    //     tasks.push(task);
+                    //     console.log("Task added successfully!");
+                    //     console.log();
+                    //     displayMenu();
+                    //     getChoice();
+                    // });
+                    // }
+
+                    // function viewTasks() {
+                    // if (tasks.length === 0) {
+                    //     console.log("No tasks found.");
+                    //     console.log();
+                    // } else {
+                    //     console.log("Tasks:");
+                    //     tasks.forEach((task, index) => {
+                    //     console.log(`${index + 1}. ${task}`);
+                    //     });
+                    //     console.log();
+                    // }
+                    // displayMenu();
+                    // getChoice();
+                    // }
+
+                    // function removeTask() {
+                    // if (tasks.length === 0) {
+                    //     console.log("No tasks found.");
+                    //     console.log();
+                    //     displayMenu();
+                    //     getChoice();
+                    // } else {
+                    //     rl.question("Enter the task number to remove: ", function(taskNumber) {
+                    //     taskNumber = parseInt(taskNumber);
+                    //     if (taskNumber >= 1 && taskNumber <= tasks.length) {
+                    //         tasks.splice(taskNumber - 1, 1);
+                    //         console.log("Task removed successfully!");
+                    //     } else {
+                    //         console.log("Invalid task number.");
+                    //     }
+                    //     console.log();
+                    //     displayMenu();
+                    //     getChoice();
+                    //     });
+                    // }
+                    // }
+
+                    // function getChoice() {
+                    // rl.question("Enter your choice (1-4): ", function(choice) {
+                    //     console.log();
+                    //     switch (choice) {
+                    //     case "1":
+                    //         addTask();
+                    //         break;
+                    //     case "2":
+                    //         viewTasks();
+                    //         break;
+                    //     case "3":
+                    //         removeTask();
+                    //         break;
+                    //     case "4":
+                    //         console.log("Exiting the program...");
+                    //         rl.close();
+                    //         break;
+                    //     default:
+                    //         console.log("Invalid choice. Please try again.");
+                    //         console.log();
+                    //         displayMenu();
+                    //         getChoice();
+                    //         break;
+                    //     }
+                    // });
+                    // }
+
+                    // console.log("Console Application - To-Do List");
+                    // console.log("--------------------------------");
+                    // console.log();
+                    // displayMenu();
+                    // getChoice();
+                    //////////////////////////////////third/////////////////////////////////////////////////////////
+                        // class BankAccount {
+                        // constructor() {
+                        //     this.balance = 0;
+                        // }
+
+                        // getBalance() {
+                        //     return this.balance;
+                        // }
+
+                        // deposit(amount) {
+                        //     this.balance += amount;
+                        // }
+
+                        // withdraw(amount) {
+                        //     if (this.balance >= amount) {
+                        //     this.balance -= amount;
+                        //     return true;
+                        //     } else {
+                        //     return false;
+                        //     }
+                        // }
+                        // }
+
+                        // const readline = require('readline');
+
+                        // const rl = readline.createInterface({
+                        // input: process.stdin,
+                        // output: process.stdout
+                        // });
+
+                        // const account = new BankAccount();
+
+                        // function displayMenu() {
+                        // console.log("Bank Application");
+                        // console.log("------------------");
+                        // console.log("1. Deposit");
+                        // console.log("2. Withdraw");
+                        // console.log("3. Check Balance");
+                        // console.log("4. Exit");
+                        // console.log();
+                        // }
+
+                        // function deposit() {
+                        // rl.question("Enter the deposit amount: ", function(amount) {
+                        //     amount = parseFloat(amount);
+                        //     if (!isNaN(amount)) {
+                        //     account.deposit(amount);
+                        //     console.log("Deposit successful!");
+                        //     } else {
+                        //     console.log("Invalid input.");
+                        //     }
+                        //     console.log();
+                        //     displayMenu();
+                        //     getChoice();
+                        // });
+                        // }
+
+                        // function withdraw() {
+                        // rl.question("Enter the withdrawal amount: ", function(amount) {
+                        //     amount = parseFloat(amount);
+                        //     if (!isNaN(amount)) {
+                        //     if (account.withdraw(amount)) {
+                        //         console.log("Withdrawal successful!");
+                        //     } else {
+                        //         console.log("Insufficient balance.");
+                        //     }
+                        //     } else {
+                        //     console.log("Invalid input.");
+                        //     }
+                        //     console.log();
+                        //     displayMenu();
+                        //     getChoice();
+                        // });
+                        // }
+
+                        // function checkBalance() {
+                        // console.log("Current balance: " + account.getBalance());
+                        // console.log();
+                        // displayMenu();
+                        // getChoice();
+                        // }
+
+                        // function getChoice() {
+                        // rl.question("Enter your choice (1-4): ", function(choice) {
+                        //     console.log();
+                        //     switch (choice) {
+                        //     case "1":
+                        //         deposit();
+                        //         break;
+                        //     case "2":
+                        //         withdraw();
+                        //         break;
+                        //     case "3":
+                        //         checkBalance();
+                        //         break;
+                        //     case "4":
+                        //         console.log("Exiting the program...");
+                        //         rl.close();
+                        //         break;
+                        //     default:
+                        //         console.log("Invalid choice. Please try again.");
+                        //         console.log();
+                        //         displayMenu();
+                        //         getChoice();
+                        //         break;
+                        //     }
+                        // });
+                        // }
+
+                        // console.log("Bank Application");
+                        // console.log("------------------");
+                        // console.log();
+                        // displayMenu();
+                        // getChoice();
+</script>
+    </body>
+</html>
